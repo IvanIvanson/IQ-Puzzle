@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IQ PUZZLE</title>
+         <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+		  <link rel="stylesheet" type="text/css" href="style.css">
+		   <script src="js.js"></script>
+    </head>
+    <body>
+    <div class="header">
+   
+     <div class="rules">
+    
+      <div id="item">Rules game</div>
+       <div id ="strDoun"></div>
+     
+     
+      <div id="rulesContent">
+        <p>&bull; You have five shapes: three trapezoids, a rectangle and a triangle.</p>
+        <p>&bull; Using the buttons located on the edges of the field (the buttons have the shape of figures), assemble the house.</p>
+        <p>&bull; To rotate the figures, double-click on them.</p>
+      </div>
+    </div>
+
+   
+   
+   <h2 class="IqPuzzle">💚IQ PUZZLE💚</h2>
+  
+  
+    <!--- MODAL WINDOW --->
+   
+     <a href="#ModalWindow" id="ModalWindowClose">Help</a>
+    <div id="ModalWindow" class="Modal"> <div class="Modal_Body">
+   
+     <!--Контент внутри окна -->
+    
+     <!-- block Modal Figure -->
+      <div class="fieldMd">
+     
+  <div class="trapezium1Md"></div>
+  <div class="trapezium2Md"></div>
+  <div class="trapezium3Md"></div>
+  <div class="triangleMd"  ></div>
+  <div class="rectangleMd" ></div>
+  <div class="house"></div>
+      </div>
+     
+    
+    
+     <!-- end block Modal Figure-->
+    
+    
+    
+     <button id="btnh">Assembly</button>
+    
+     <a href="#ModalWindowClose" id="close">Close</a> </div> </div>
+
+    <!--- MODAL WINDOW END --->
+   
+  
+        </div>
+  
+  
+  
+  <div class="container">
+ 
+      <div class="field">
+     
+  <div class="trapezium1" id="fig1"></div>
+  <div class="trapezium2" id="fig2"></div>
+  <div class="trapezium3" id="fig3"></div>
+  <div class="triangle"   id="fig4"></div>
+  <div class="rectangle"  id="fig5"></div>
+  <div class="house" id="house"></div>
+      </div>
+     
+      <div class="left">
+         <ul>
+         <li>Left</li>
+             <li><input type="button" class="trapeziumBtn1" id="btn1" value="left"></li>
+             <li><input type="button" class="trapeziumBtn2" id="btn21" value="left"></li>
+             <li><input type="button" class="trapeziumBtn3" id="btn31" value="left"></li>
+             <li><input type="button" class="triangleBtn" id="btn41" value="left"></li>
+             <li><input type="button" class="rectangleBtn" id="btn51" value=""></li>
+         </ul>
+         
+      </div>
+     
+      <div class="right">
+     
+            <ul>
+         <li>Right</li>
+             <li><input type="button" class="trapeziumBtn1" id="btn2" value=""></li>
+             <li><input type="button" class="trapeziumBtn2" id="btn22" value=""></li>
+             <li><input type="button" class="trapeziumBtn3" id="btn32" value=""></li>
+             <li><input type="button" class="triangleBtn" id="btn42"  value=""></li>
+             <li><input type="button" class="rectangleBtn" id="btn52" value=""></li>
+         </ul>
+        
+      </div>
+     
+      <div class="top">
+          <p>Top</p>
+          <ul>
+        
+             <li><input type="button" class="trapeziumBtn1" id="btn3" value=""></li>
+             <li><input type="button" class="trapeziumBtn2" id="btn23" value=""></li>
+             <li><input type="button" class="trapeziumBtn3" id="btn33" value=""></li>
+             <li><input type="button" class="triangleBtn" id="btn43"  value=""></li>
+             <li><input type="button" class="rectangleBtn" id="btn53" value=""></li>
+         </ul>
+        
+         
+      </div>
+     
+      <div class="bottom">
+         
+          <p>bottom</p>
+          <ul>
+        
+             <li><input type="button" class="trapeziumBtn1" id="btn4" value=""></li>
+             <li><input type="button" class="trapeziumBtn2" id="btn24" value=""></li>
+             <li><input type="button" class="trapeziumBtn3" id="btn34" value=""></li>
+             <li><input type="button" class="triangleBtn" id="btn44"  value=""></li>
+             <li><input type="button" class="rectangleBtn" id="btn54" value=""></li>
+         </ul>
+        
+         
+         
+      </div>
+  </div>
+  
+  
+  
+  
+   <script>
+
+function fun1(){     
+  $('#fig1').css('margin-left',
+                     '-=5' )              
+               
+            }
+           
+        function fun2(){     
+  $('#fig1').css('margin-left',
+                     '+=5' )              
+               
+            }    
+           
+           function fun3(){     
+  $('#fig1').css('margin-top',
+                     '-=5' )              
+               
+            } 
+           
+             function fun4(){     
+  $('#fig1').css('margin-top',
+                     '+=5' )              
+               
+            }
+           
+
+  document.getElementById('btn1').onclick=fun1;
+document.getElementById('btn2').onclick=fun2;
+
+document.getElementById('btn3').onclick=fun3;
+   
+document.getElementById('btn4').onclick=fun4;  
+  </script>
+   
+   
+    <script>
+ 
+function fun21(){     
+  $('#fig2').css('margin-left',
+                     '-=5' )              
+               
+            }
+           
+        function fun22(){     
+  $('#fig2').css('margin-left',
+                     '+=5' )              
+               
+            }    
+           
+           function fun23(){     
+  $('#fig2').css('margin-top',
+                     '-=5' )              
+               
+            } 
+           
+             function fun24(){     
+  $('#fig2').css('margin-top',
+                     '+=5' )              
+               
+            }
+           
+  document.getElementById('btn21').onclick=fun21;
+document.getElementById('btn22').onclick=fun22;
+
+document.getElementById('btn23').onclick=fun23;
+   
+document.getElementById('btn24').onclick=fun24;  
+  </script>
+ 
+ 
+  <script>
+ 
+function fun31(){     
+  $('#fig3').css('margin-left',
+                     '-=5' )              
+               
+            }
+           
+        function fun32(){     
+  $('#fig3').css('margin-left',
+                     '+=5' )              
+               
+            }    
+           
+           function fun33(){     
+  $('#fig3').css('margin-top',
+                     '-=5' )              
+               
+            } 
+           
+             function fun34(){     
+  $('#fig3').css('margin-top',
+                     '+=5' )              
+               
+            }
+           
+  document.getElementById('btn31').onclick=fun31;
+document.getElementById('btn32').onclick=fun32;
+
+document.getElementById('btn33').onclick=fun33;
+   
+document.getElementById('btn34').onclick=fun34;  
+  </script>
+ 
+ 
+  <script>
+ 
+function fun41(){     
+  $('#fig4').css('margin-left',
+                     '-=5' )              
+               
+            }
+           
+        function fun42(){     
+  $('#fig4').css('margin-left',
+                     '+=5' )              
+               
+            }    
+           
+           function fun43(){     
+  $('#fig4').css('margin-top',
+                     '-=5' )              
+               
+            } 
+           
+             function fun44(){     
+  $('#fig4').css('margin-top',
+                     '+=5' )              
+               
+            }
+           
+  document.getElementById('btn41').onclick=fun41;
+document.getElementById('btn42').onclick=fun42;
+
+document.getElementById('btn43').onclick=fun43;
+   
+document.getElementById('btn44').onclick=fun44;  
+  </script>
+ 
+  <script>
+   function fun51(){     
+  $('#fig5').css('margin-left',
+                     '-=5' )              
+               
+            }
+           
+        function fun52(){     
+  $('#fig5').css('margin-left',
+                     '+=5' )              
+               
+            }    
+           
+           function fun53(){     
+  $('#fig5').css('margin-top',
+                     '-=5' )              
+               
+            } 
+           
+             function fun54(){     
+  $('#fig5').css('margin-top',
+                     '+=5' )              
+               
+            }
+           
+  document.getElementById('btn51').onclick=fun51;
+document.getElementById('btn52').onclick=fun52;
+
+document.getElementById('btn53').onclick=fun53;
+   
+document.getElementById('btn54').onclick=fun54;  
+  </script>
+ 
+
+ 
+    <script>
+   
+   /*---------Rotate block-------------*/
+
+var rotate = 0;
+$("#fig1").dblclick(function(){
+  rotate = rotate + 45;
+  $("#fig1").css({
+  "transform": "rotate("+rotate+"deg)"
+  });
+});
+
+  $("#fig2").dblclick(function(){
+  rotate = rotate + 45;
+  $("#fig2").css({
+  "transform": "rotate("+rotate+"deg)"
+  });
+});
+
+  $("#fig3").dblclick(function(){
+  rotate = rotate + 45;
+  $("#fig3").css({
+  "transform": "rotate("+rotate+"deg)"
+  });
+});
+
+$("#fig4").dblclick(function(){
+  rotate = rotate + 45;
+  $("#fig4").css({
+  "transform": "rotate("+rotate+"deg)"
+  });
+});
+  $("#fig5").dblclick(function(){
+  rotate = rotate + 15;
+  $("#fig5").css({
+  "transform": "rotate("+rotate+"deg)"
+  });
+});
+
+
+
+
+/*---------------------------------*/
+/*
+
+function fun(event) {
+           $("#fig1").offset ( {
+           left: event.pageX = 200,
+          top: event.pageY = 195
+            });
+            rotate = rotate + 270;
+  $("#fig1").css({
+  "transform": "rotate("+rotate+"deg)"
+  });
+ 
+ 
+        $("#fig2").offset ( {
+           left: event.pageX = 162,
+          top: event.pageY = 270
+            });
+            rotate = rotate + 315;
+  $("#fig2").css({
+  "transform": "rotate("+rotate+"deg)"
+  });
+ 
+ 
+     $("#fig3").offset ( {
+           left: event.pageX = 190,
+          top: event.pageY = 240
+            });
+            rotate = rotate + 180;
+  $("#fig3").css({
+  "transform": "rotate("+rotate+"deg)"
+  });
+ 
+ 
+  $("#fig4").offset ( {
+           left: event.pageX = 100,
+          top: event.pageY = 270
+            });
+            rotate = rotate + 180;
+  $("#fig4").css({
+  "transform": "rotate("+rotate+"deg)"
+  });
+ 
+  $("#fig5").offset ( {
+           left: event.pageX = 130,
+          top: event.pageY = 209
+            });
+            rotate = rotate + 90;
+  $("#fig5").css({
+  "transform": "rotate("+rotate+"deg)"
+  });
+ 
+ 
+ 
+       
+           };
+          
+          
+    
+           document.getElementById("btnh").onclick=fun;
+          
+*/
+
+       
+    </script>
+   
+ 
+    </body>
+</html>
